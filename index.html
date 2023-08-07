@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="d-flex flex-column align-items-center justify-content-center vh-100">  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +13,29 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    ToDo Index: 
-
-    <!-- scripts -->
+    <main class="contianer">
+      <h2>Libray of Congress Search Engine</h2>
+      <form id="search-form">
+        <div class="mb-3">
+          <input  class="form-control" type="text" id="search-input" name="search" placeholder="search!" />
+        </div>
+        <div class="mb-3">
+          <select type="text" class="form-control" id="format" name="format">
+            <option value="">Select a format...</option>
+            <option value="maps">Maps</option>
+            <option value="audio">Audio</option>
+            <option value="photos">Photos</option>
+            <option value="manuscripts">Manuscripts</option>
+            <option value="newspaper">Newspaper</option>
+            <option value="maps">Maps</option>
+            <option value="film-and-videos">Films and Videos</option>
+            <option value="notated-music">Notated Music</option>
+            <option value="websites">Websites</option>
+          </select>
+        </div>
+        <button class="btn btn-primary w-100">Search</button>  <!-- w-100 fills 100% of the width -->
+      </form>
+    </main>
 
     <!-- jquery CDN -->
     <script
